@@ -40,6 +40,14 @@ Examples of Phase 2:
 
 ```
 
+# Experiments
+## Collect data
+
+## Summarizer
+
+## Ranker
+
+
 # Publication
 * "WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs"
 
