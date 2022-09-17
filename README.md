@@ -17,11 +17,11 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 {"wikidata_id": "Q55135146", "label": "Xyleborus intrusus", "source": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", "target": "species of insect", "baseline_candidates": ["taxon"]}
 ```
 
-* wikidata_id: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
-* label: the label of a Wikidata item, usually as the article Wikipedia title, https://www.wikidata.org/wiki/Help:Label
-* source: the first paragraph of a Wikipedia article
-* target: the description of a Wikidata item, https://www.wikidata.org/wiki/Help:Description
-* baseline_candidates: a list of instances (P31) of a Wiki item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)
+* **wikidata_id**: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
+* **label**: the label of a Wikidata item, usually as the article Wikipedia title, https://www.wikidata.org/wiki/Help:Label
+* **source**: the first paragraph of a Wikipedia article
+* **target**: the description of a Wikidata item, https://www.wikidata.org/wiki/Help:Description
+* **baseline_candidates**: a list of instances (P31) of a Wiki item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)
 
 
 ### Some samples of Phase 1:
