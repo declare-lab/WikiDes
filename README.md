@@ -83,12 +83,12 @@ python summarizer.py
 Note to update these code lines in the file **summarizer.py**:
 
 ```
-tokenizer = AutoTokenizer.from_pretrained('microsoft/ssr-base', do_lower_case=False)
+tokenizer = AutoTokenizer.from_pretrained('facebook/bart-base', do_lower_case=False)
     
 if __name__ == "__main__":
 
     # training models: facebook/bart-base, t5-small, t5-base, microsoft/ssr-base, google/t5-v1_1-small, google/t5-v1_1-base
-    config = Config(model = 'microsoft/ssr-base', tokenizer = 'microsoft/ssr-base', batch_size = 8, \
+    config = Config(model = 'facebook/bart-base', tokenizer = 'facebook/bart-base', batch_size = 8, \
                     encoder_max_length = 256, decoder_max_length = 32, num_train_epochs = 3)
 
     train_data, val_data = load_data(config.batch_size, config.tokenizer, config.encoder_max_length, \
