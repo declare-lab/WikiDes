@@ -9,7 +9,7 @@ The data contain over 80k samples in the file **collected_data.json**.  There ar
 ## Phrase 1. Description generation 
 We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)) as topics of samples. The data distribution is training set ~ 80%, validation set ~ 10%, and test set ~ 10%. We use first 256 tokens in Wikipedia first paragraphs as the documents in the training.
 * **topic-exclusive split (diff)**: The data is split in different topics. The training set will have different topics from validation and test sets. The distribution of training, validation, and test sets is 65,772/7,820/7,827. Please get the file here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase1/diff.
-* **topic-independent split (random)**: The data is split in random topics. All sets will have random topics. The distribution of training, validation, and test sets is 68,296/8,540/8,542.  Note that we did not filter empty Wikidata instances in this split.  Please get the file here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase1/random
+* **topic-independent split (random)**: The data is split in random topics. All sets will have random topics. The distribution of training, validation, and test sets is 68,296/8,540/8,542.  Note that we did not filter empty Wikidata instances in this split.  Please get the file here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase1/random.
 
 ### A detail sample of Phase 1
 
@@ -37,7 +37,7 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 ```
 
 ## Phrase 2. Candidate ranking
-Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples). Please get the data here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase2
+Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples). Please get the data here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase2.
 
 ### A detail sample of Phase 2
 
