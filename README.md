@@ -64,8 +64,8 @@ The results will be saved in "dataset/collected_data.json".
 * "WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs"
 
 # Laboratories
-* CIC IPN, http://nlp.cic.ipn.mx/
 * DeCLaRe Lab, https://declare-lab.net/
+* CIC IPN, http://nlp.cic.ipn.mx/
 
 # Contact
 Hoang Thang Ta, tahoangthang@gmail.com
