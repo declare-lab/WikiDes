@@ -116,7 +116,7 @@ To train the ranking model, use:
 python post_eval.py
 ```
 
-Note to update these code lines in the file **summarizer.py**:
+Note to update these code lines in the file **post_eval.py**:
 
 ```
 if __name__ == '__main__':
