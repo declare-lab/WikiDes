@@ -43,6 +43,14 @@ Examples of Phase 2:
 # Experiments
 ## Collect data
 
+To collect your own data (randomly), simply use this command.
+
+```
+python collect_data.py
+```
+
+The results will be saved in "dataset/collected_data.json". 
+
 ## Summarizer
 
 ## Ranker
