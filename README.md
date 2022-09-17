@@ -99,10 +99,31 @@ if __name__ == "__main__":
           batch_size = config.batch_size, output_dir='output/' + config.model_name)
 
 ```
+* Use the pre-trained model for the training, for example **"facebook/bart-base"**.
 
 *We will add the arguments soon.*
 
 ## Phase II: Candidate Ranking by Ranker
+
+To train the ranking model, use:
+
+```
+python post_eval.py
+```
+
+Note to update these code lines in the file **summarizer.py**:
+
+```
+if __name__ == '__main__':
+
+    config = Config(model_name = 'bert-base-cased', tokenizer = 'bert-base-cased', batch_size = 2, max_length = 256)
+    train_model(config, splitting_type = 'different', num_epochs = 3, use_sim = True, use_rouge = False, \
+                training_file = 'dataset/phrase2/generated_training_para_256_diff.json', \
+                val_file = 'dataset/phrase2/generated_validation_para_256_diff.json', \
+                test_file = 'dataset/phrase2/generated_test_para_256_diff.json')
+```
+
+*We will add the arguments soon.*
 
 
 # Publication
