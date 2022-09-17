@@ -130,6 +130,21 @@ if __name__ == '__main__':
 
 *We will add the arguments soon.*
 
+## Human evaluation
+
+To see the human concensus, run this command:
+
+```
+python human_eval.py
+```
+
+To annotate data by human, run:
+```
+python human_annot.py
+```
+
+* Check the code files for details.
+
 # Questions or Issues:
 Please ask us at https://github.com/declare-lab/WikiDes/issues or contact to tahoangthang@gmail.com.
 
