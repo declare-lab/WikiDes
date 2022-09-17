@@ -4,7 +4,7 @@ We present a novel dataset for generating descriptions of Wikidata from Wikipedi
 
 # Dataset 
 
-The data contain over 80k examples in the file **collected_data.json**.  There are 2 phases of training, description generation and candidate ranking. 
+The data contain over 80k samples in the file **collected_data.json**.  There are 2 phases of training, description generation and candidate ranking. 
 
 ## Phrase 1. Description generation 
 We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)) as topics of samples. The data distribution is training set ~ 80%, validation set ~ 10%, and test set ~ 10%. We use first 256 tokens in Wikipedia first paragraphs as the documents in the training.
@@ -12,7 +12,7 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 * topic-independent split (random): The data is split into random topics. The sets will have random topics. The distribution of training, validation, and test sets is 68,296/8,540/8,542.  Note that we did not filter empty Wikidata instances in this splitting.
 
 ## Phrase 2. Candidate ranking
-Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 examples), validation set ~ 12.5% (1000 examples), and test set ~ 12.5% (1000 examples).
+Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples).
 
 ## Samples
 
