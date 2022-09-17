@@ -125,6 +125,9 @@ if __name__ == '__main__':
 
 *We will add the arguments soon.*
 
+# Questions or Issues:
+Please ask us at https://github.com/declare-lab/WikiDes/issues or contact to tahoangthang@gmail.com.
+
 
 # Publication
 * "WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs"
