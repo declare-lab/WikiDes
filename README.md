@@ -20,7 +20,7 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 * **wikidata_id**: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
 * **label**: the label of a Wikidata item, usually as the article Wikipedia title, https://www.wikidata.org/wiki/Help:Label
 * **source**: the first paragraph of a Wikipedia article
-* **target**: the description of a Wikidata item, https://www.wikidata.org/wiki/Help:Description
+* **target**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
 * **baseline_candidates**: a list of instances (P31) of a Wiki item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)
 
 
@@ -37,9 +37,17 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 ```
 
 ## Phrase 2. Candidate ranking
-Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples).
+Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples). Please get the data here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase2
 
 ### A detail sample of Phase 2
+
+```
+{"source": "Knuthenborg Safaripark is a safari park on the island of Lolland in the southeast of Denmark. It is located 7 km (on Rte 289) to the north of Maribo, near Bandholm. It is one of Lolland's major tourist attractions with over 250,000 visitors annually, and is the largest safari park in northern Europe. It is also the largest natural playground for both children and adults in Denmark. Among others, it houses an arboretum, aviaries, a drive-through safari park, a monkey forest (with baboons, tamarins and lemurs) and a tiger enclosure. Knuthenborg covers a total of 660 hectares (1,600 acres), including the 400-hectare (990-acre) Safaripark. The park is viewable on Google Street View.", "candidate": ["park in Lolland, Denmark", "safari park"], "target": "Safari park in Denmark"}
+```
+
+* source: the first paragraph of a Wikipedia article
+* candidate: the list of machine-generated descriptions from Phase I by beam search
+* target:  the **gold description** in Phase I
 
 ### Some samples of Phase 2:
 ```
