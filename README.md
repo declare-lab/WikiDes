@@ -18,6 +18,15 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 
 ### A detail sample of Phase 1
 
+```
+{"wikidata_id": "Q55135146", "label": "Xyleborus intrusus", "source": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", "target": "species of insect", "baseline_candidates": ["taxon"]}
+```
+
+* wikidata_id: the identifier of a Wikidata item 
+* label: the label of a Wikidata item, also as the article Wikipedia title
+* source: the paragraph of the corresponding Wikipedia article
+* target: the descriptions of a Wkidata item
+* baseline_candidates: contain a list of instances (P31)
 
 
 ### Samples of Phase 1:
