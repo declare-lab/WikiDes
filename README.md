@@ -29,7 +29,7 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 * baseline_candidates: a list of instances (P31) of a Wiki item
 
 
-### Samples of Phase 1:
+### Some samples of Phase 1:
 ```
 {"wikidata_id": "Q55135146", "label": "Xyleborus intrusus", "source": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", "target": "species of insect", "baseline_candidates": ["taxon"]}
 
@@ -41,7 +41,9 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 
 ```
 
-Samples of Phase 2:
+### A detail sample of Phase 2
+
+### Some samples of Phase 2:
 ```
 {"source": "Knuthenborg Safaripark is a safari park on the island of Lolland in the southeast of Denmark. It is located 7 km (on Rte 289) to the north of Maribo, near Bandholm. It is one of Lolland's major tourist attractions with over 250,000 visitors annually, and is the largest safari park in northern Europe. It is also the largest natural playground for both children and adults in Denmark. Among others, it houses an arboretum, aviaries, a drive-through safari park, a monkey forest (with baboons, tamarins and lemurs) and a tiger enclosure. Knuthenborg covers a total of 660 hectares (1,600 acres), including the 400-hectare (990-acre) Safaripark. The park is viewable on Google Street View.", "candidate": ["park in Lolland, Denmark", "safari park"], "target": "Safari park in Denmark"}
 
