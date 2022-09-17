@@ -64,17 +64,45 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 # Experiments
 ## Collect data
 
-To collect your own data (randomly), simply use this command.
+To collect your own data (randomly), use:
 
 ```
 python collect_data.py
 ```
 
-The results will be saved in "dataset/collected_data.json". 
+The results will be saved in the folder **"dataset/collected_data.json"**. 
 
-## Summarizer
+## Phase I: Description Generation by Summarizer
 
-## Ranker
+To train the generation model, use:
+
+```
+python summarizer.py
+```
+
+Note to update these code lines in the file **summarizer.py**:
+
+```
+tokenizer = AutoTokenizer.from_pretrained('microsoft/ssr-base', do_lower_case=False)
+    
+if __name__ == "__main__":
+
+    # training models: facebook/bart-base, t5-small, t5-base, microsoft/ssr-base, google/t5-v1_1-small, google/t5-v1_1-base
+    config = Config(model = 'microsoft/ssr-base', tokenizer = 'microsoft/ssr-base', batch_size = 8, \
+                    encoder_max_length = 256, decoder_max_length = 32, num_train_epochs = 3)
+
+    train_data, val_data = load_data(config.batch_size, config.tokenizer, config.encoder_max_length, \
+                                     config.decoder_max_length, train_file = 'dataset/phrase1/random/training_para_256.json', \
+                                     val_file = 'dataset/phrase1/random/validation_para_256.json')
+
+    train(config.model, config.tokenizer, train_data, val_data, num_train_epochs = config.num_train_epochs, \
+          batch_size = config.batch_size, output_dir='output/' + config.model_name)
+
+```
+
+*We will add the arguments soon.*
+
+## Phase II: Candidate Ranking by Ranker
 
 
 # Publication
