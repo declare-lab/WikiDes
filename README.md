@@ -11,11 +11,6 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 * topic-exclusive split (diff): The data is splitted by different topics. The training set will have different topics from validation and test sets. The distribution of training, validation, and test sets is 65,772/7,820/7,827.
 * topic-independent split (random): The data is split into random topics. The sets will have random topics. The distribution of training, validation, and test sets is 68,296/8,540/8,542.  Note that we did not filter empty Wikidata instances in this splitting.
 
-## Phrase 2. Candidate ranking
-Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples).
-
-## Samples
-
 ### A detail sample of Phase 1
 
 ```
@@ -40,6 +35,9 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 {"wikidata_id": "Q6899359", "label": "Moneysupermarket.com", "source": "Moneysupermarket.com Group PLC is a British price comparison website-based business specialising in financial services. The website enables consumers to compare prices on a range of products, including energy car insurance, home insurance, travel insurance, mortgages, credit cards and loans. The company's 2016 advert was one of the four that received the most complaints from the public in that year. Moneysupermarket is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index.", "target": "British price comparison website-based business", "baseline_candidates": ["public limited company"]}
 
 ```
+
+## Phrase 2. Candidate ranking
+Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, different topic splitting and random topic splitting. The data distribution is training set ~ 75% (6000 samples), validation set ~ 12.5% (1000 samples), and test set ~ 12.5% (1000 samples).
 
 ### A detail sample of Phase 2
 
