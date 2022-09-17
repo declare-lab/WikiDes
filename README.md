@@ -62,6 +62,11 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 ```
 
 # Experiments
+
+## Dependencies
+
+* Python >= 3.6
+
 ## Collect data
 
 To collect your own data (randomly), use:
