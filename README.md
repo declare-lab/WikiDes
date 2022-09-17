@@ -18,7 +18,7 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 ```
 
 * **wikidata_id**: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
-* **label**: the label of a Wikidata item, usually as the article Wikipedia title, https://www.wikidata.org/wiki/Help:Label
+* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
 * **source**: the first paragraph of a Wikipedia article
 * **target**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
 * **baseline_candidates**: a list of instances (P31) of a Wiki item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)
