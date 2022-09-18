@@ -47,7 +47,7 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 
 * **source**: the first paragraph of a Wikipedia article
 * **candidate**: the list of machine-generated descriptions from Phase I by beam search
-* **target**:  the **gold description** in Phase I
+* **target**:  the **gold description** which we take the first candidate of **baseline_candidates**.
 
 ### Some samples of Phase 2:
 ```
