@@ -13,28 +13,37 @@ The collected dataset (e.g. **collected_data.json**) contains these fields:
 * label: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
 * description: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
 * instances:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions
-* subclassess: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. 
-* aliases:
-* first_paragraph:
+* subclassess: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions
+* aliases: They are alternative names for a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases
+* first_paragraph: 
 * first_sentence
 
 ### A sample from the collected dataset
 
 ```
 {
-    "wikidata_id": "Q55135146", 
-    "label": "Xyleborus intrusus", 
-    "description": "species of insect", 
+    "wikidata_id": "Q65293712", 
+    "label": "Lepisma saccharina", 
+    "description": "small, wingless insect in the order Thysanura", 
     "instances": [
         [
             "Q16521", 
             "taxon"
         ]
     ], 
-    "subclasses": [], 
-    "aliases": [], 
-    "first_paragraph": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", 
-    "first_sentence": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae."
+    "subclasses": [
+        [
+            "Q219174", 
+            "pest"
+        ]
+    ], 
+    "aliases": [
+        "Lepisma saccharina", 
+        "fishmoth", 
+        "Silverfish"
+    ], 
+    "first_paragraph": "The silverfish (Lepisma saccharinum) is a species of small, primitive, wingless insect in the order Zygentoma (formerly Thysanura). Its common name derives from the insect's silvery light grey colour, combined with the fish-like appearance of its movements. The scientific name (L. saccharinum) indicates that the silverfish's diet consists of carbohydrates such as sugar or starches. While the common name silverfish is used throughout the global literature to refer to various species of Zygentoma, the Entomological Society of America restricts use of the term solely for Lepisma saccharinum.", 
+    "first_sentence": "The silverfish (Lepisma saccharinum) is a species of small, primitive, wingless insect in the order Zygentoma (formerly Thysanura)."
 }
 ```
 
