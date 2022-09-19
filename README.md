@@ -35,8 +35,8 @@ The collected dataset (e.g. **collected_data.json**) contains these fields:
     "aliases": [], 
     "first_paragraph": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", 
     "first_sentence": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae."
-}```
-
+}
+```
 
 # Training Process to Generate Descriptions
 
