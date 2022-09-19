@@ -9,13 +9,13 @@ The data contain over 80k samples in the file **collected_data.json**. Please ge
 ## Dataset Description
 
 The collected dataset (e.g. **collected_data.json**) contains these fields:
-* **wikidata_id**:  the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
-* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
-* **description**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
-* **instances**:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions
-* **subclassess**: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another, https://www.wikidata.org/wiki/Help:Basic_membership_properties. *We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions*
-* **aliases**: They are alternative names for the label of a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases
-* **first_paragraph**: the first paragraph of a Wikipedia article that is linked to a Wikidata item
+* **wikidata_id**:  the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers.
+* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label.
+* **description**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description.
+* **instances**:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions.
+* **subclassess**: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another, https://www.wikidata.org/wiki/Help:Basic_membership_properties. *We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions*.
+* **aliases**: They are alternative names for the label of a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases.
+* **first_paragraph**: the first paragraph of a Wikipedia article that is linked to a Wikidata item.
 * **first_sentence**: the first sentence of the the first paragraph. We use package NLTK punkt, https://www.nltk.org/_modules/nltk/tokenize/punkt.html for the extraction.
 
 ### A sample from the collected dataset
@@ -62,10 +62,10 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 {"wikidata_id": "Q55135146", "label": "Xyleborus intrusus", "source": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", "target": "species of insect", "baseline_candidates": ["taxon"]}
 ```
 
-* **wikidata_id**: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
-* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
-* **source**: the first paragraph of a Wikipedia article
-* **target**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
+* **wikidata_id**: the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers.
+* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label.
+* **source**: the first paragraph of a Wikipedia article.
+* **target**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description.
 * **baseline_candidates**: a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions.
 
 
@@ -90,8 +90,8 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 {"source": "Knuthenborg Safaripark is a safari park on the island of Lolland in the southeast of Denmark. It is located 7 km (on Rte 289) to the north of Maribo, near Bandholm. It is one of Lolland's major tourist attractions with over 250,000 visitors annually, and is the largest safari park in northern Europe. It is also the largest natural playground for both children and adults in Denmark. Among others, it houses an arboretum, aviaries, a drive-through safari park, a monkey forest (with baboons, tamarins and lemurs) and a tiger enclosure. Knuthenborg covers a total of 660 hectares (1,600 acres), including the 400-hectare (990-acre) Safaripark. The park is viewable on Google Street View.", "candidate": ["park in Lolland, Denmark", "safari park"], "target": "Safari park in Denmark"}
 ```
 
-* **source**: the first paragraph of a Wikipedia article
-* **candidate**: the list of machine-generated descriptions from Phase I by beam search
+* **source**: the first paragraph of a Wikipedia article.
+* **candidate**: the list of machine-generated descriptions from Phase I by beam search.
 * **target**:  the **gold description** which we take the first candidate of **baseline_candidates**.
 
 ### Some samples of Phase 2:
