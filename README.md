@@ -1,10 +1,16 @@
 # WikiDes: A Wikipedia-based summarization dataset
 
-We present a novel dataset for generating descriptions of Wikidata from Wikipedia paragraphs. This is a problem of both extreme summarization and indicative summarization. However, after using ranking models, the problem is likely more informative summarization.
+We present a dataset for generating descriptions of Wikidata from Wikipedia paragraphs. This is a problem of both extreme summarization and indicative summarization. However, after using ranking models, the problem is likely more informative summarization.
 
 # Dataset 
 
-The data contain over 80k samples in the file **collected_data.json**.  There are 2 phases of training, **description generation and candidate ranking**. 
+The data contain over 80k samples in the file **collected_data.json**.  
+
+## Dataset Description
+
+# Training Process to Generate Descriptions
+
+There are 2 phases of training, **description generation and candidate ranking**. 
 
 ## Phrase 1. Description generation 
 We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)) as topics of samples. The data distribution is training set ~ 80%, validation set ~ 10%, and test set ~ 10%. We use first 256 tokens in Wikipedia first paragraphs as the documents in the training.
@@ -149,12 +155,9 @@ python human_annot.py
 Please ask us at https://github.com/declare-lab/WikiDes/issues or contact to tahoangthang@gmail.com.
 
 
-# Publication
-* "WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs"
+# Citation
 
-# Laboratories
-* DeCLaRe Lab, https://declare-lab.net/
-* CIC IPN, http://nlp.cic.ipn.mx/
+WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs, Hoang Thang Ta, Abu Bakar Siddiqur Rahman, Navonil Majumder, Amir Hussain, Lotfollah Najjar, Newton Howard, Soujanya Poria, Alexander Gelbukh. Information Fusion (2022).
 
 # Contact
 Hoang Thang Ta, tahoangthang@gmail.com
