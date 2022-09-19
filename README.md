@@ -4,7 +4,7 @@ We present a dataset for generating descriptions of Wikidata from Wikipedia para
 
 # Dataset 
 
-The data contain over 80k samples in the file **collected_data.json**. Please get the file here: https://github.com/declare-lab/WikiDes/blob/main/dataset/collected_data.zip.  
+The data contain over 80k samples in the file **collected_data.json**. Please get the file here: **https://github.com/declare-lab/WikiDes/blob/main/dataset/collected_data.zip**.  
 
 ## Dataset Description
 
