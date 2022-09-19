@@ -8,6 +8,36 @@ The data contain over 80k samples in the file **collected_data.json**.
 
 ## Dataset Description
 
+The collected dataset (e.g. **collected_data.json**) contains these fields:
+* wikidata_id:  the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
+* label: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
+* description: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
+* instances:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions
+* subclassess: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. 
+* aliases:
+* first_paragraph:
+* first_sentence
+
+### A sample from the collected dataset
+
+```
+{
+    "wikidata_id": "Q55135146", 
+    "label": "Xyleborus intrusus", 
+    "description": "species of insect", 
+    "instances": [
+        [
+            "Q16521", 
+            "taxon"
+        ]
+    ], 
+    "subclasses": [], 
+    "aliases": [], 
+    "first_paragraph": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae. It is found in North America.", 
+    "first_sentence": "Xyleborus intrusus is a species of typical bark beetle in the family Curculionidae."
+}```
+
+
 # Training Process to Generate Descriptions
 
 There are 2 phases of training, **description generation and candidate ranking**. 
@@ -27,7 +57,7 @@ We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_members
 * **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
 * **source**: the first paragraph of a Wikipedia article
 * **target**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
-* **baseline_candidates**: a list of instances (P31) of a Wiki item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions.
+* **baseline_candidates**: a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions.
 
 
 ### Some samples of Phase 1:
