@@ -9,14 +9,14 @@ The data contain over 80k samples in the file **collected_data.json**.
 ## Dataset Description
 
 The collected dataset (e.g. **collected_data.json**) contains these fields:
-* wikidata_id:  the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
-* label: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
-* description: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
-* instances:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions
-* subclassess: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions
-* aliases: They are alternative names for a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases
-* first_paragraph: 
-* first_sentence
+* **wikidata_id**:  the identifier of a Wikidata item, https://www.wikidata.org/wiki/Wikidata:Identifiers
+* **label**: the label of a Wikidata item or the Wikipedia article title, https://www.wikidata.org/wiki/Help:Label
+* **description**: the description of a Wikidata item or the **gold description**, https://www.wikidata.org/wiki/Help:Description
+* **instances**:  a list of instances (P31) of a Wikidata item, https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31). They are considered as the baseline descriptions
+* **subclassess**: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions
+* **aliases**: They are alternative names for a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases
+* **first_paragraph**: 
+* **first_sentence**:
 
 ### A sample from the collected dataset
 
