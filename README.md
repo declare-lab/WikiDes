@@ -16,7 +16,7 @@ The collected dataset (e.g. **collected_data.json**) contains these fields:
 * **subclassess**: a list of subclasses (P279) of a Wikidata. Property P279 is used to state that all the instances of one class are instances of another. We do not use this list in the experiment but it can combine with instances or replace the role of instances as the baseline descriptions
 * **aliases**: They are alternative names for a Wikidata item, https://www.wikidata.org/wiki/Help:Aliases
 * **first_paragraph**: the first paragraph of a Wikipedia article that is linked to a Wikidata item
-* **first_sentence**: the first sentence of the the first paragraph
+* **first_sentence**: the first sentence of the the first paragraph. We use package NLTK punkt, https://www.nltk.org/_modules/nltk/tokenize/punkt.html for the extraction.
 
 ### A sample from the collected dataset
 
