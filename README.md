@@ -198,7 +198,8 @@ Please ask us at https://github.com/declare-lab/WikiDes/issues or contact to tah
 ```
 @article{Ta_2022,	
 doi = {10.1016/j.inffus.2022.09.022},	
-url = {https://doi.org/10.1016%2Fj.inffus.2022.09.022},	year = 2022,	
+url = {https://doi.org/10.1016%2Fj.inffus.2022.09.022},	
+year = 2022,	
 month = {sep},	
 publisher = {Elsevier {BV}},	
 author = {Hoang Thang Ta and Abu Bakar Siddiqur Rahman and Navonil Majumder and Amir Hussain and Lotfollah Najjar and Newton Howard and Soujanya Poria and Alexander Gelbukh},	
