@@ -207,6 +207,9 @@ title = {{WikiDes}: A Wikipedia-based dataset for generating short descriptions 
 journal = {Information Fusion}}
 ```
 
+* https://doi.org/10.1016%2Fj.inffus.2022.09.022
+* https://arxiv.org/abs/2209.13101
+
 # Contact
 Hoang Thang Ta, tahoangthang@gmail.com
 
