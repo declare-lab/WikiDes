@@ -195,6 +195,11 @@ Please ask us at https://github.com/declare-lab/WikiDes/issues or contact to tah
 
 
 # Citation
+
+## APA
+Ta, H. T., Rahman, A. B. S., Majumder, N., Hussain, A., Najjar, L., Howard, N., ... & Gelbukh, A. (2022). WikiDes: A Wikipedia-based dataset for generating short descriptions from paragraphs. *Information Fusion*.
+
+## BibTeX
 ```
 @article{Ta_2022,	
 doi = {10.1016/j.inffus.2022.09.022},	
