@@ -1,6 +1,6 @@
 # WikiDes: A Wikipedia-Based Dataset for Generating Short Descriptions from Paragraphs
 
-We present **Wikides** (Wiki descriptions), a dataset for generating descriptions of Wikidata from Wikipedia paragraphs. This is a problem of both extreme summarization and indicative summarization. The generated descriptions from two-phase summarization makes the problem turn to informative summarization. In addition, the dataset can use for other problems of NLP:
+We present **Wikides** (Wikipedia descriptions), a dataset for generating descriptions of Wikidata from Wikipedia paragraphs. This is a problem of both extreme summarization and indicative summarization. The generated descriptions from two-phase summarization makes the problem turn to informative summarization. In addition, the dataset can use for other problems of NLP:
 * Title generation
 * Text classification based on instances (topics)
 * Extract instances (topics) from text
