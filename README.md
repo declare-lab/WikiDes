@@ -114,6 +114,7 @@ Similar to Phase 1, there are 2 groups of datasets by 2 ways of data splitting, 
 ## Dependencies
 
 * Python >= 3.6
+* spaCy 2.3.2
 
 ## Collect data
 
