@@ -29,7 +29,8 @@ tag_re = re.compile(r'<[^>]+>')
 import spacy
 from spacy import displacy
 nlp = spacy.load('en_core_web_md')
-nlp.add_pipe(nlp.create_pipe('sentencizer'), before='parser')
+#nlp.add_pipe(nlp.create_pipe('sentencizer'), before='parser') # for spaCy 2.3.2
+nlp.add_pipe('sentencizer', before='parser') # for spaCy 3.4.1
 
 import sys
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), '')
