@@ -218,6 +218,7 @@ journal = {Information Fusion}}
 
 # Paper links
 * https://doi.org/10.1016%2Fj.inffus.2022.09.022
+* https://www.sciencedirect.com/science/article/pii/S1566253522001610 (50 days free access)
 * https://arxiv.org/abs/2209.13101
 
 # Contact
