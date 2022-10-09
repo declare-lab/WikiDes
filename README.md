@@ -54,6 +54,8 @@ The collected dataset (e.g. **collected_data.json**) contains these fields:
 
 There are 2 phases of training, **description generation and candidate ranking**. 
 
+![alt text](https://github.com/declare-lab/two_phase_sum.png?raw=true)
+
 ## Phrase 1. Description generation 
 We consider Wikidata instances (https://www.wikidata.org/wiki/Help:Basic_membership_properties#instance_of_(P31)) as topics of samples. The data distribution is training set ~ 80%, validation set ~ 10%, and test set ~ 10%. We use first 256 tokens in Wikipedia first paragraphs as the documents in the training.
 * **topic-exclusive split (diff)**: The data is split in different topics. The training set will have different topics from validation and test sets. The distribution of training, validation, and test sets is 65,772/7,820/7,827. Please get the file here: https://github.com/declare-lab/WikiDes/tree/main/dataset/phase1/diff.
