@@ -124,7 +124,7 @@ To collect your own data (randomly), use:
 python collect_data.py
 ```
 
-The results will be saved in the folder **"dataset/collected_data.json"**. 
+The results will be saved in the folder **"dataset/collected_data.json"**. The main code is in **wiki_core.py**. For a more latest version, please check https://github.com/hoangthangta/WikiAPICore.
 
 ## Phase I: Description Generation by Summarizer
 
