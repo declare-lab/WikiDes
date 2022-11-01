@@ -24,7 +24,7 @@ def check_index(index, file = 'dataset/index.txt'):
     if (index in index_list): return True
     return False
     
-def collect_single(output_file = 'dataset/collect_data.json'):
+def collect_single(output_file = 'dataset/collected_data.json'):
 
     result_dict = {}
     wikidata_id = ''
