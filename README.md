@@ -148,8 +148,8 @@ if __name__ == "__main__":
                     encoder_max_length = 256, decoder_max_length = 32, num_train_epochs = 3)
 
     train_data, val_data = load_data(config.batch_size, config.tokenizer, config.encoder_max_length, \
-                                     config.decoder_max_length, train_file = 'dataset/phrase1/random/training_para_256.json', \
-                                     val_file = 'dataset/phrase1/random/validation_para_256.json')
+                                     config.decoder_max_length, train_file = 'dataset/phase1/random/training_para_256.json', \
+                                     val_file = 'dataset/phase1/random/validation_para_256.json')
 
     train(config.model, config.tokenizer, train_data, val_data, num_train_epochs = config.num_train_epochs, \
           batch_size = config.batch_size, output_dir='output/' + config.model_name)
@@ -174,9 +174,9 @@ if __name__ == '__main__':
 
     config = Config(model_name = 'bert-base-cased', tokenizer = 'bert-base-cased', batch_size = 2, max_length = 256)
     train_model(config, splitting_type = 'different', num_epochs = 3, use_sim = True, use_rouge = False, \
-                training_file = 'dataset/phrase2/generated_training_para_256_diff.json', \
-                val_file = 'dataset/phrase2/generated_validation_para_256_diff.json', \
-                test_file = 'dataset/phrase2/generated_test_para_256_diff.json')
+                training_file = 'dataset/phase2/generated_training_para_256_diff.json', \
+                val_file = 'dataset/phase2/generated_validation_para_256_diff.json', \
+                test_file = 'dataset/phase2/generated_test_para_256_diff.json')
 ```
 
 *We will add the arguments soon.*
